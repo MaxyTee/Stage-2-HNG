@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <main data-testid="test-contact-page" class="about-page">
+      <section class="about-nav">
+        <div class="navbar">
+          <h4>Maxy</h4>
+          <nav>
+            <ul>
+              <li><a href="../index.html">Profile Card</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section data-testid="test-about-bio" class="about-bio">
+        <h2>Contact Us</h2>
+        <p>Here / Contact Me</p>
+      </section>
+      <div class="section-wrap-contact">
+        <section class="contact">
+          <p>Contact Us</p>
+          <h2>Get In Touch</h2>
+          <form class="contact-form" novalidate>
+            <div>
+              <label for="name">Full Name</label><br />
+              <input
+                id="name"
+                name="name"
+                data-testid="test-contact-name"
+                type="text"
+                placeholder="Your Name"
+                aria-describedby="error-name"
+                required
+              />
+              <p
+                id="error-name"
+                data-testid="test-contact-error-name"
+                style="color: red"
+              ></p>
+            </div>
+            <div>
+              <label for="email">Email</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                data-testid="test-contact-email"
+                aria-describedby="error-email"
+                required
+              />
+              <p
+                id="error-email"
+                data-testid="test-contact-error-email"
+                style="color: red"
+              ></p>
+            </div>
+            <div>
+              <label for="subject">Subject</label><br />
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                data-testid="test-contact-subject"
+                aria-describedby="error-subject"
+                required
+              />
+              <p
+                id="error-subject"
+                data-testid="test-contact-error-subject"
+                style="color: red"
+              ></p>
+            </div>
+            <div>
+              <label for="message">Message</label><br />
+              <textarea
+                id="message"
+                name="message"
+                rows="10"
+                cols="22"
+                data-testid="test-contact-message"
+                aria-describedby="error-message"
+                required
+              >
+              Type Here</textarea
+              >
+            </div>
+            <p
+              id="error-message"
+              data-testid="test-contact-error-message"
+              style="color: red"
+            ></p>
+
+            <button data-testid="test-contact-submit" type="submit">
+              Send Now
+            </button>
+            <p
+              class="success"
+              data-testid="test-contact-success"
+              style="color: green; display: none"
+            >
+              ✅ Your message has been sent successfully!
+            </p>
+          </form>
+        </section>
+        <section>
+          <p>
+            Keep believing in yourself and never stop learning. Every bug fixed
+            and every project completed makes you stronger and better. You’ve
+            come a long way, and the journey is just beginning!
+          </p>
+          <div class="contact-social">
+            <div>
+              <i class="fa fa-phone"></i>
+              <h3>Phone Number</h3>
+              <p>09033554493</p>
+            </div>
+            <div>
+              <i class="fa fa-envelope"></i>
+              <h3>Email Address</h3>
+              <p>mariamadebimpetairu@gmail.com</p>
+            </div>
+            <div>
+              <i class="fa fa-whatsapp"></i>
+              <h3>Whatsapp</h3>
+              <p>09033554493</p>
+            </div>
+            <div>
+              <i class="fa fa-location-dot"></i>
+              <h3>Location</h3>
+              <p>Kano, Nigeria</p>
+            </div>
+          </div>
+
+          <div>
+            <img src="../Pic/map.jpg" alt="" />
+          </div>
+        </section>
+      </div>
+      <section class="view">
+        <h5>Contact Me Now</h5>
+        <h2>I always Make The Best</h2>
+        <button><a href="contact.html">Contact Us</a></button>
+      </section>
+      <footer class="about-footer">
+        <div>
+          <h2>Maxy</h2>
+          <p>
+            I’m passionate about learning new skills, especially <br />
+            in technology. I enjoy coding, reading, <br />
+            and exploring new ideas.
+          </p>
+        </div>
+        <div>
+          <h4>Our Store</h4>
+          <p>Profile Card</p>
+          <p>About</p>
+          <p>Contact</p>
+        </div>
+        <div>
+          <h4>Get In Touch</h4>
+          <div class="flex">
+            <i class="fa fa-location-dot"></i>
+            <p>Kano, Nigeria</p>
+          </div>
+          <div class="flex">
+            <i class="fa fa-phone"></i>
+            <p>09033554493</p>
+          </div>
+          <div class="flex">
+            <i class="fa fa-whatsapp"></i>
+            <p>09033554493</p>
+          </div>
+          <div class="flex">
+            <i class="fa fa-envelope"></i>
+            <p>mariamadebimpetairu</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

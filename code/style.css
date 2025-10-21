@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #555;
+}
+
+.profile-card {
+  text-align: center;
+  background-color: #fff;
+  width: 30rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.profile-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(#ff6b6b, #f8e71c, #50e3c2, #4a90e2, #ff6b6b);
+  animation: rotate 5s linear infinite;
+  z-index: -1;
+}
+
+.profile-card::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #fff;
+  border-radius: 12px;
+  z-index: -1;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+figure img {
+  box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1);
+
+  width: 10rem;
+  border-radius: 1rem;
+}
+.user-name {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.user-info {
+  font-size: 0.8rem;
+}
+
+.user-nav-link {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-wrap {
+  padding: 1rem 0;
+  margin: 1rem 0;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+section {
+  text-align: left;
+}
+
+section h4 {
+  margin-bottom: 0.4rem;
+}
+section ul {
+  font-size: 0.8rem;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+section ul > li {
+  background-color: #eee;
+  padding: 0.4rem 0.6rem;
+  border-radius: 1rem;
+}
+nav {
+  align-self: center;
+}
+
+.btn {
+  list-style: none;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.2rem;
+  background: #eee;
+  cursor: pointer;
+  margin-top: 0.4rem;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #fff;
+}
+.btn a {
+  text-decoration: none;
+}
+
+/* About */
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
